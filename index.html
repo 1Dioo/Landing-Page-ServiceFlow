@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta name="description" content="Conheça o ServiceFlow 3.3, projeto desktop para gerenciamento de serviços e agendamentos.">
+  <title>ServiceFlow — Gestão de serviços</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header" id="inicio">
+    <div class="container header-content">
+      <a class="brand" href="#inicio" aria-label="ServiceFlow, início">
+        <span class="brand-icon"><i data-lucide="layers-3"></i></span>
+        <span class="brand-name">Service<span>Flow</span><small>PROJECT 3.3</small></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu"
+        aria-expanded="false" aria-controls="navigation">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <nav class="navigation" id="navigation" aria-label="Menu principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="#desenvolvimento">Desenvolvimento</a>
+        <a class="nav-button" href="#projeto">Conhecer projeto <i data-lucide="arrow-up-right"></i></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="status-dot"></span> PROJETO DESKTOP · VERSÃO 3.3</div>
+
+          <h1>Organização que deixa o trabalho <span>fluir.</span></h1>
+
+          <p class="hero-description">
+            O ServiceFlow é um projeto de aplicação desktop pensado para
+            organizar serviços, clientes e agendamentos em uma experiência
+            clara e centralizada.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-light" href="#sobre">
+              Explorar projeto <i data-lucide="arrow-down-right"></i>
+            </a>
+            <a class="button button-outline" href="#recursos">
+              Conhecer recursos <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="hero-details">
+            <div class="detail">
+              <span class="detail-icon"><i data-lucide="monitor"></i></span>
+              <span><strong>Aplicação desktop</strong><small>Gestão centralizada</small></span>
+            </div>
+            <span class="detail-divider"></span>
+            <div class="detail">
+              <span class="detail-icon"><i data-lucide="user-round"></i></span>
+              <span><strong>Um desenvolvedor</strong><small>Idealizado por Diogo</small></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="visual-label"><span></span> PRÉVIA CONCEITUAL DA INTERFACE</div>
+
+          <div class="dashboard">
+            <div class="dashboard-top">
+              <div class="window-dots"><span></span><span></span><span></span></div>
+              <span>ServiceFlow / Dashboard</span>
+              <i data-lucide="panel-right"></i>
+            </div>
+
+            <div class="dashboard-layout">
+              <aside class="dash-sidebar">
+                <div class="dash-brand"><i data-lucide="layers-3"></i> ServiceFlow</div>
+                <small class="dash-label">MENU PRINCIPAL</small>
+                <div class="dash-link selected"><i data-lucide="layout-dashboard"></i> Dashboard</div>
+                <div class="dash-link"><i data-lucide="calendar-days"></i> Agenda</div>
+                <div class="dash-link"><i data-lucide="users"></i> Clientes</div>
+                <div class="dash-link"><i data-lucide="briefcase-business"></i> Serviços</div>
+                <div class="dash-link"><i data-lucide="chart-no-axes-column"></i> Relatórios</div>
+                <div class="dash-user"><span>D</span><div><b>Diogo</b><small>Administrador</small></div></div>
+              </aside>
+
+              <div class="dash-content">
+                <div class="dash-heading">
+                  <div><small>VISÃO GERAL</small><h3>Dashboard</h3><p>Acompanhe as informações do sistema.</p></div>
+                  <span class="dash-date"><i data-lucide="calendar"></i> Visão geral</span>
+                </div>
+
+                <div class="dash-stats">
+                  <div class="dash-stat"><span>Agendamentos</span><i data-lucide="calendar-check"></i><b>--</b><small>Indicador ilustrativo</small></div>
+                  <div class="dash-stat"><span>Clientes</span><i data-lucide="users"></i><b>--</b><small>Indicador ilustrativo</small></div>
+                  <div class="dash-stat"><span>Serviços</span><i data-lucide="briefcase-business"></i><b>--</b><small>Indicador ilustrativo</small></div>
+                </div>
+
+                <div class="dash-panels">
+                  <div class="dash-panel">
+                    <div class="panel-heading"><b>Atividade</b><span>ILUSTRAÇÃO</span></div>
+                    <div class="chart">
+                      <div class="chart-bars">
+                        <span style="--bar:35%"></span><span style="--bar:55%"></span>
+                        <span style="--bar:43%"></span><span style="--bar:70%"></span>
+                        <span style="--bar:48%"></span><span style="--bar:85%"></span>
+                        <span style="--bar:62%"></span>
+                      </div>
+                    </div>
+                    <div class="chart-labels"><span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span><span>Dom</span></div>
+                  </div>
+                  <div class="dash-panel dash-agenda">
+                    <div class="panel-heading"><b>Agenda</b><i data-lucide="arrow-up-right"></i></div>
+                    <div class="agenda-empty"><i data-lucide="calendar-clock"></i><b>Organização diária</b><small>Área conceitual</small></div>
+                    <div class="fake-line"></div><div class="fake-line short"></div>
+                  </div>
+                </div>
+                <div class="dash-disclaimer"><i data-lucide="info"></i> Interface ilustrativa, sem dados reais.</div>
+              </div>
+            </div>
+          </div>
+          <p class="visual-caption">Uma representação visual da proposta do ServiceFlow.</p>
+        </div>
+      </div>
+
+      <div class="container hero-bottom">
+        <span>GESTÃO SIMPLES. VISÃO CENTRALIZADA.</span>
+        <i data-lucide="arrow-down"></i>
+        <span>EXPLORE O PROJETO</span>
+      </div>
+    </section>
+
+    <section class="section section-border" id="sobre">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><div class="eyebrow">01 / SOBRE O PROJETO</div><h2>Menos dispersão.<br><span>Mais visão do todo.</span></h2></div>
+          <p>
+            O ServiceFlow nasceu como um projeto de desenvolvimento de software
+            com uma proposta direta: reunir rotinas de gerenciamento em uma
+            aplicação desktop organizada e fácil de compreender.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card about-feature reveal">
+            <div class="card-icon"><i data-lucide="target"></i></div>
+            <small>PROPÓSITO</small>
+            <h3>Transformar tarefas em um fluxo mais claro.</h3>
+            <p>
+              Facilitar a visualização e a organização de informações relacionadas
+              a serviços, clientes e agendamentos em um ambiente centralizado.
+            </p>
+            <div class="decorative-lines"><span></span><span></span><span></span></div>
+          </article>
+
+          <article class="about-card reveal">
+            <div class="card-icon"><i data-lucide="workflow"></i></div>
+            <small>PROPOSTA</small>
+            <h3>Um fluxo de trabalho integrado.</h3>
+            <p>
+              Conectar áreas importantes da rotina em uma estrutura consistente,
+              com navegação direta e atenção à experiência de uso.
+            </p>
+          </article>
+
+          <article class="about-card reveal">
+            <div class="card-icon"><i data-lucide="graduation-cap"></i></div>
+            <small>APRENDIZADO</small>
+            <h3>Construído para evoluir.</h3>
+            <p>
+              Desenvolver habilidades de programação, organização de código,
+              resolução de problemas e design de interfaces.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-border" id="recursos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><div class="eyebrow">02 / RECURSOS</div><h2>O essencial, em<br><span>um só lugar.</span></h2></div>
+          <p>
+            O projeto contempla áreas para apoiar o gerenciamento cotidiano.
+            A disponibilidade de cada recurso depende do estágio atual
+            de implementação.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card reveal"><span class="feature-number">01</span><div class="feature-icon"><i data-lucide="layout-dashboard"></i></div><h3>Dashboard</h3><p>Visão geral para reunir informações importantes e facilitar o acompanhamento.</p><i class="feature-arrow" data-lucide="arrow-up-right"></i></article>
+          <article class="feature-card reveal"><span class="feature-number">02</span><div class="feature-icon"><i data-lucide="calendar-days"></i></div><h3>Agenda</h3><p>Área dedicada à organização e ao acompanhamento dos agendamentos.</p><i class="feature-arrow" data-lucide="arrow-up-right"></i></article>
+          <article class="feature-card reveal"><span class="feature-number">03</span><div class="feature-icon"><i data-lucide="users"></i></div><h3>Clientes</h3><p>Estrutura para manter os dados dos clientes organizados.</p><i class="feature-arrow" data-lucide="arrow-up-right"></i></article>
+          <article class="feature-card reveal"><span class="feature-number">04</span><div class="feature-icon"><i data-lucide="briefcase-business"></i></div><h3>Serviços</h3><p>Organização das informações e dos cadastros de serviços.</p><i class="feature-arrow" data-lucide="arrow-up-right"></i></article>
+          <article class="feature-card reveal"><span class="feature-number">05</span><div class="feature-icon"><i data-lucide="user-round-cog"></i></div><h3>Profissionais</h3><p>Área prevista para organizar informações dos profissionais.</p><i class="feature-arrow" data-lucide="arrow-up-right"></i></article>
+          <article class="feature-card reveal"><span class="feature-number">06</span><div class="feature-icon"><i data-lucide="chart-no-axes-combined"></i></div><h3>Relatórios</h3><p>Consulta de informações e acompanhamento dos registros.</p><i class="feature-arrow" data-lucide="arrow-up-right"></i></article>
+        </div>
+
+        <p class="section-note"><i data-lucide="info"></i> Os recursos descrevem as áreas do projeto; nem todos necessariamente estão finalizados.</p>
+      </div>
+    </section>
+
+    <section class="section section-border" id="galeria">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><div class="eyebrow">03 / GALERIA</div><h2>O projeto em <span>imagens.</span></h2></div>
+          <p>Mostre a interface real do programa com capturas de tela do dashboard, da agenda e dos cadastros.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item gallery-main reveal">
+            <div class="gallery-image">
+              <img src="assets/dashboard.png" alt="Captura do dashboard do ServiceFlow"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+              <div class="image-fallback"><i data-lucide="image"></i><b>Adicione a captura do dashboard</b><small>assets/dashboard.png</small></div>
+            </div>
+            <figcaption><span><b>01 — Visão geral</b><small>Dashboard da aplicação</small></span><span class="image-tag">DASHBOARD</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal">
+            <div class="gallery-image">
+              <img src="assets/agenda.png" alt="Captura da agenda do ServiceFlow"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+              <div class="image-fallback"><i data-lucide="calendar-days"></i><b>Adicione a captura da agenda</b><small>assets/agenda.png</small></div>
+            </div>
+            <figcaption><span><b>02 — Agendamentos</b><small>Organização da agenda</small></span><span class="image-tag">AGENDA</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal">
+            <div class="gallery-image">
+              <img src="assets/clientes.png" alt="Captura da tela de clientes do ServiceFlow"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+              <div class="image-fallback"><i data-lucide="users"></i><b>Adicione a captura dos cadastros</b><small>assets/clientes.png</small></div>
+            </div>
+            <figcaption><span><b>03 — Cadastros</b><small>Clientes e serviços</small></span><span class="image-tag">CADASTROS</span></figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-tip">
+          <!-- <i data-lucide="lightbulb"></i> -->
+        <!--  <p><strong>Personalize a galeria:</strong> salve suas capturas na pasta <code>assets</code> com os nomes indicados. Prefira imagens reais do programa, sem dados pessoais de clientes.</p> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-border" id="tecnologias">
+      <div class="container tech-layout">
+        <div class="tech-copy reveal">
+          <div class="eyebrow">04 / TECNOLOGIAS</div>
+          <h2>Ferramentas para <span>construir e evoluir.</span></h2>
+          <p>
+            O ServiceFlow utiliza tecnologias voltadas à lógica da aplicação,
+            à construção de interfaces desktop e à organização do projeto.
+          </p>
+          <a class="text-link" href="#desenvolvimento">Conheça o desenvolvimento <i data-lucide="arrow-right"></i></a>
+        </div>
+
+        <div class="tech-list reveal">
+          <div class="tech-row"><span class="tech-symbol java-symbol">J</span><span><b>Java 17</b><small>Linguagem principal da aplicação</small></span><small class="tech-category">LINGUAGEM</small></div>
+          <div class="tech-row"><span class="tech-symbol"><i data-lucide="monitor"></i></span><span><b>JavaFX</b><small>Construção da interface desktop</small></span><small class="tech-category">INTERFACE</small></div>
+          <div class="tech-row"><span class="tech-symbol"><i data-lucide="file-code-2"></i></span><span><b>FXML</b><small>Estruturação das telas</small></span><small class="tech-category">LAYOUT</small></div>
+          <div class="tech-row"><span class="tech-symbol"><i data-lucide="palette"></i></span><span><b>CSS</b><small>Estilização e identidade visual</small></span><small class="tech-category">ESTILO</small></div>
+          <div class="tech-row"><span class="tech-symbol"><i data-lucide="package"></i></span><span><b>Maven</b><small>Gerenciamento e build do projeto</small></span><small class="tech-category">BUILD</small></div>
+          <div class="tech-row"><span class="tech-symbol"><i data-lucide="git-branch"></i></span><span><b>Git</b><small>Controle de versão</small></span><small class="tech-category">VERSÃO</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-border" id="desenvolvimento">
+      <div class="container developer-grid">
+        <div class="developer-visual reveal">
+          <div class="developer-frame">
+            <div class="developer-orbit orbit-one"></div>
+            <div class="developer-orbit orbit-two"></div>
+            <div class="developer-monogram">D<span>.</span></div>
+            <div class="developer-badge"><span class="status-dot"></span> DESENVOLVIMENTO INDIVIDUAL</div>
+          </div>
+          <p class="developer-caption"><i data-lucide="code-2"></i> Planejamento · Código · Evolução</p>
+        </div>
+
+        <div class="developer-copy reveal">
+          <div class="eyebrow">05 / QUEM ESTÁ POR TRÁS</div>
+          <h2>Uma ideia, muitas etapas.<br><span>Uma pessoa construindo.</span></h2>
+          <p>
+            Atualmente, o ServiceFlow é desenvolvido individualmente por
+            <strong>Diogo</strong>. Da implementação à evolução da interface,
+            o projeto representa uma jornada de aprendizado, experimentação
+            e aprimoramento contínuo.
+          </p>
+
+          <div class="developer-facts">
+            <div><b>01</b><span>Desenvolvedor</span></div>
+            <div><b>3.3</b><span>Versão do projeto</span></div>
+            <div><b>Em evolução</b><span>Status atual</span></div>
+          </div>
+
+          <blockquote>
+            <i data-lucide="quote"></i>
+            <p>Construir uma aplicação útil e evoluir tecnicamente a cada etapa do desenvolvimento.</p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-border" id="projeto">
+      <div class="container">
+        <div class="closing-card reveal">
+          <div class="closing-orbit"></div>
+          <div class="closing-content">
+            <div class="eyebrow"><span class="status-dot"></span> SERVICEFLOW · VERSÃO 3.3</div>
+            <h2>Um projeto em construção.<br><span>Pronto para evoluir.</span></h2>
+            <p>
+              Esta página apresenta a proposta, as tecnologias e o processo
+              por trás do ServiceFlow. Acompanhe sua evolução e conheça
+              as próximas etapas do projeto.
+            </p>
+            <div class="closing-actions">
+              <a class="button button-light" href="https://github.com/1Dioo/ServiceFlow" target="_blank" rel="noopener noreferrer">
+                Ver projeto no GitHub <i data-lucide="arrow-up-right"></i>
+              </a>
+              <a class="button button-outline" href="#inicio">Voltar ao início <i data-lucide="arrow-up"></i></a>
+            </div>
+            <p class="github-note"><i data-lucide="info"></i> Se o repositório tiver sido removido ou renomeado, atualize o link no HTML.</p>
+          </div>
+          <div class="closing-logo"><span class="brand-icon"><i data-lucide="layers-3"></i></span><b>SF<span>.</span></b></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <a class="brand" href="#inicio"><span class="brand-icon"><i data-lucide="layers-3"></i></span><span class="brand-name">Service<span>Flow</span><small>PROJECT 3.3</small></span></a>
+      <p>Projeto desktop de gerenciamento de serviços e agendamentos.</p>
+      <span>Desenvolvido por Diogo</span>
+      <span>© <span id="year"></span> ServiceFlow</span>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <i data-lucide="arrow-up"></i>
+  </button>
+</body>
+</html>
